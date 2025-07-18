@@ -1,56 +1,61 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>حكايتي معك | دردشة مقابل الراحة</title>
+  <title>حكايتي معك | مساحة فضفضة آمنة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Tahoma', sans-serif;
-      background-color: #fdf0f0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #ffe3e8, #ffffff);
       color: #333;
       margin: 0;
       padding: 0;
-      direction: rtl;
     }
     header {
-      background-color: #ffafc9;
-      padding: 20px;
+      background: linear-gradient(90deg, #ff7b9c, #ffafc9);
+      padding: 25px;
       text-align: center;
       color: white;
     }
     nav {
-      background-color: #ffe0ea;
+      background-color: #fff0f5;
       padding: 10px;
       text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     nav a {
       margin: 0 15px;
-      color: #444;
+      color: #d81b60;
       text-decoration: none;
       font-weight: bold;
     }
     section {
       padding: 30px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
     .box {
-      background-color: #fff;
+      background-color: #ffffff;
       border-radius: 15px;
-      box-shadow: 0 0 10px #d2a0a0;
-      padding: 20px;
-      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      margin-bottom: 25px;
     }
     .pricing {
       display: flex;
-      flex-direction: column;
-      gap: 15px;
+      flex-wrap: wrap;
+      gap: 20px;
     }
     .plan {
+      flex: 1;
+      min-width: 250px;
       border: 1px solid #ffa2b4;
       border-radius: 10px;
-      padding: 15px;
-      background-color: #fff5f7;
+      padding: 20px;
+      background-color: #fff8fa;
     }
     footer {
       background-color: #ffe0ea;
@@ -79,67 +84,122 @@
     .payment-icons img {
       height: 40px;
     }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      padding: 5px 0;
+      color: #444;
+    }
+    .gender-select {
+      margin-top: 10px;
+    }
+    .gender-select label {
+      margin-left: 10px;
+    }
+    .chat-link {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      color: #d81b60;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>حكايتي معك</h1>
-    <p>دردش معي براحة تامة… كلامك في أمان</p>
-  </header>  <nav>
-    <a href="#about">عن الخدمة</a>
-    <a href="#plans">الباقات</a>
-    <a href="#contact">تواصل</a>
-  </nav>  <section id="about">
-    <div class="box">
-      <h2>ما هي حكايتي معك؟</h2>
-      <p>هي مساحة آمنة وخاصة تقدر فيها تفضفض، تحكي، تتنفس، أو حتى تضحك… بدون أي حكم، بدون فضول زائد، فقط إنسان يسمعك من القلب.
-      🧠 كل الرسائل خاصة، ولا يتم حفظها أو نشرها. تختار الاسم اللي تحبه والدردشة اللي ترتاح فيها.</p>
+
+<header>
+  <h1>حكايتي معك</h1>
+  <p>دردشة مقابل الراحة النفسية 💬🧠</p>
+</header>
+
+<nav>
+  <a href="#about">عن الخدمة</a>
+  <a href="#plans">الباقات</a>
+  <a href="#features">المميزات</a>
+  <a href="#contact">تواصل</a>
+  <a href="chat.html">🔒 صفحة الدردشة</a>
+</nav>
+
+<section id="about">
+  <div class="box">
+    <h2>ما هي حكايتي معك؟</h2>
+    <p>هي منصة خصوصية واستماع وإنصات، لتشعر بالراحة والطمأنينة دون أي حكم أو تدخل. كل دردشة تبدأ بسرية وتنتهي بسرية.</p>
+    <div class="gender-select">
+      <label><input type="radio" name="gender"> أنثى</label>
+      <label><input type="radio" name="gender"> ذكر</label>
+      <label><input type="radio" name="gender"> لا أرغب بالإفصاح</label>
     </div>
-  </section>  <section id="plans">
-    <div class="box">
-      <h2>الباقات المتوفرة</h2>
-      <div class="pricing">
-        <div class="plan">
-          <h3>باقة خفيفة – 30 دقيقة</h3>
-          <p>🕒 نص ساعة دردشة خفيفة ومريحة</p>
-          <p>💰 السعر: 5 دولار</p>
-        </div>
-        <div class="plan">
-          <h3>باقة عميقة – ساعة كاملة</h3>
-          <p>🧠 ساعة كاملة لفضفضة ونقاشات عميقة</p>
-          <p>💰 السعر: 10 دولار</p>
-        </div>
-        <div class="plan">
-          <h3>باقة دعم نفسي</h3>
-          <p>🎧 جلسة استماع صوتية / نصية مع دعم صادق</p>
-          <p>💰 السعر: 15 – 20 دولار</p>
-        </div>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="box">
+    <h2>الباقات المتوفرة</h2>
+    <div class="pricing">
+      <div class="plan">
+        <h3>باقة خفيفة – 30 دقيقة</h3>
+        <p>🕒 جلسة قصيرة مريحة للدردشة</p>
+        <p>💰 السعر: 5 دولار (نصية فقط)</p>
+      </div>
+      <div class="plan">
+        <h3>باقة عميقة – 60 دقيقة</h3>
+        <p>🧠 فضفضة معمّقة صوتية أو نصية</p>
+        <p>💰 السعر: 10 دولار (اختيار نوع الجلسة)</p>
+      </div>
+      <div class="plan">
+        <h3>باقة مميزة – 90 دقيقة</h3>
+        <p>🎧 جلسة دعم واستماع مطوّلة مع تقييم نفسي بسيط</p>
+        <p>💰 السعر: 18 دولار</p>
+      </div>
+      <div class="plan">
+        <h3>باقة متابعة أسبوعية</h3>
+        <p>📆 جلسة 45 دقيقة كل 3 أيام لمدة أسبوع</p>
+        <p>💰 السعر: 25 دولار</p>
       </div>
     </div>
-  </section>  <section id="contact">
-    <div class="box">
-      <h2>كيف يتم الدفع والتواصل؟</h2>
-      <p>بعد اختيار الباقة المناسبة، يرجى التواصل معي مباشرة عبر تيليجرام أو واتساب لإتمام عملية الدفع.</p>
-      <p><strong>طرق الدفع المتاحة:</strong></p>
-      <div class="payment-icons">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Western_Union_logo.svg" alt="Western Union">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Font_Awesome_5_solid_university.svg" alt="Bank Transfer">
-      </div>
-      <ul>
-        <li>💳 PayPal</li>
-        <li>💸 حوالة عبر ويسترن يونيون</li>
-        <li>🏦 تحويل بنكي (محلي أو دولي)</li>
-      </ul>
-      <p>📩 سيتم إرسال بيانات الدفع عند التواصل المباشر.</p>
-      <ul>
-        <li>📱 تيليجرام: <a href="https://t.me/your_username">@your_username</a></li>
-        <li>📱 واتساب: <a href="https://wa.me/967718488431">+967 718 488 431</a></li>
-      </ul>
-      <a class="whatsapp-button" href="https://wa.me/967718488431">🔁 اضغط هنا للتحويل الآن عبر واتساب</a>
+  </div>
+</section>
+
+<section id="features">
+  <div class="box features">
+    <h2>المميزات التي ستحصل عليها</h2>
+    <ul>
+      <li>🔐 سرية تامة: لا يتم حفظ المحادثات أو الأسماء</li>
+      <li>🎯 تخصيص الجلسة حسب احتياجك</li>
+      <li>🌐 طرق دفع متنوعة وسهلة</li>
+      <li>🧏‍♀️ الاستماع من شخص حقيقي، بدون حكم أو نقد</li>
+      <li>💬 دردشة عبر تيليجرام أو واتساب أو صوت</li>
+    </ul>
+    <a class="chat-link" href="chat.html">⬅️ ابدأ الدردشة الآن</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="box">
+    <h2>طرق الدفع والتواصل</h2>
+    <p>بعد اختيار الباقة، تواصل معنا لإرسال بيانات الدفع.</p>
+    <ul>
+      <li>💳 PayPal</li>
+      <li>💸 ويسترن يونيون</li>
+      <li>🏦 تحويل بنكي مباشر</li>
+    </ul>
+    <div class="payment-icons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Western_Union_logo.svg" alt="Western Union">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Font_Awesome_5_solid_university.svg" alt="Bank Transfer">
     </div>
-  </section>  <footer>
-    جميع الحقوق محفوظة &copy; 2025 – حكايتي معك
-  </footer>
+    <p>📱 تيليجرام: <a href="https://t.me/your_username">@your_username</a></p>
+    <p>📱 واتساب: <a href="https://wa.me/967718488431">+967 718 488 431</a></p>
+    <a class="whatsapp-button" href="https://wa.me/967718488431">💬 تواصل الآن عبر واتساب</a>
+  </div>
+</section>
+
+<footer>
+  جميع الحقوق محفوظة &copy; 2025 – حكايتي معك
+</footer>
+
 </body>
 </html>
